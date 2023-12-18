@@ -1314,8 +1314,8 @@ table {
   display: flex;
   height: 38px;
   img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
   }
 }
 .footer__block {
@@ -1944,3 +1944,116 @@ body.customize-support .header {
 // end free-audit
 
 // END home page
+
+// START about page
+.about .top__title::after {
+  display: none;
+}
+.about .top__title span:first-child {
+  color: #f6cb73;
+}
+.about .top__title span:nth-child(2) {
+  color: #837ede;
+}
+.about .top__first {
+  max-width: 100%;
+}
+.bullet {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.bullet__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: calc(100% / 3 - 15px);
+}
+.bullet__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.about .top__inner {
+  flex-direction: column;
+}
+.about .top__second {
+  width: 100%;
+  margin-top: 32px;
+}
+.images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.images__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+}
+.about .top__second img {
+  max-height: 100%;
+}
+.bullet_clients.bullet {
+  gap: 55px;
+}
+.bullet_clients .bullet__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.bullet_clients .bullet__item {
+  width: auto;
+}
+.clients__second {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.clients__second img {
+  width: 100%;
+  height: auto;
+}
+
+.histslider1__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.histslider1 {
+  max-width: 1015px;
+  width: 100%;
+}
+
+.histslider1__item {
+  border: 1px solid #000;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px;
+}
+
+.histslider1 .slick-track {
+  width: 100% !important;
+}
+
+.histslider1__item.slick-slide.slick-current.slick-active {
+  background-color: #837ede;
+  color: #fff;
+  border: 1px solid #837ede;
+}
+
+.histslider2__item.slick-slide.slick-current.slick-active {
+  background-color: #837ede;
+  color: #fff;
+}
+
+.histslider1 .slick-track {
+  transform: none !important;
+  margin-left: 0 !important;
+}
+// END about page

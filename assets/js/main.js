@@ -42,5 +42,36 @@
       $(this).toggleClass('active');
     });
     // END FAQ
+
+    // START history
+    $('.histslider2__inner').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.histslider1__inner',
+      infinite: false,
+      arrows: false,
+      focusOnSelect: true,
+      draggable: false,
+    });
+
+    $('.histslider1__inner').slick({
+      slidesToShow: 11,
+      slidesToScroll: 1,
+      asNavFor: '.histslider2__inner',
+      focusOnSelect: true,
+      infinite: false,
+      arrows: false,
+      swipe: false,
+      draggable: false,
+    });
+
+    $('.next-arrow').on('click', function () {
+      $('.histslider2__inner').slick('slickNext');
+    });
+    $('.prev-arrow').on('click', function () {
+      $('.histslider2__inner').slick('slickPrev');
+    });
+
+    // END history
   });
 })(jQuery);
