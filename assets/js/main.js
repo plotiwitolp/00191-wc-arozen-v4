@@ -47,16 +47,46 @@
     $('.histslider2__inner').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
+      initialSlide: 1,
       asNavFor: '.histslider1__inner',
       infinite: false,
       arrows: false,
       focusOnSelect: true,
       draggable: false,
+      centerMode: true,
+      centerPadding: '-311px',
+      responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.3,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1.1,
+          },
+        },
+      ],
     });
 
     $('.histslider1__inner').slick({
       slidesToShow: 12,
       slidesToScroll: 1,
+      initialSlide: 1,
       asNavFor: '.histslider2__inner',
       focusOnSelect: true,
       infinite: false,
@@ -65,13 +95,29 @@
       draggable: false,
     });
 
-    $('.next-arrow').on('click', function () {
+    $('.history__prevnext .next-arrow').on('click', function () {
       $('.histslider2__inner').slick('slickNext');
     });
-    $('.prev-arrow').on('click', function () {
+    $('.history__prevnext .prev-arrow').on('click', function () {
       $('.histslider2__inner').slick('slickPrev');
     });
 
+    $('.team2__inner').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      fade: true,
+      arrows: false,
+      swipe: false,
+      draggable: false,
+    });
+
+    $('.team2__prevnext .next-arrow').on('click', function () {
+      $('.team2__inner').slick('slickNext');
+    });
+    $('.team2__prevnext .prev-arrow').on('click', function () {
+      $('.team2__inner').slick('slickPrev');
+    });
     // END history
   });
 })(jQuery);

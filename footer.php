@@ -13,7 +13,7 @@
                 <?php endif; ?>
 
                 <?php if (get_field('nazvanie_knopki-ssylki', 44)) {  ?>
-                    <a href="<?php the_field('ssylka_knopki-ssylki', 44) ?>">
+                    <a href="<?php echo esc_url(get_sub_field('ssylka_knopki-ssylki', 44)); ?>">
                         <div class="btn btn_arrow-yellow"><?php the_field('nazvanie_knopki-ssylki', 44) ?></div>
                     </a>
                 <?php } ?>
@@ -29,7 +29,7 @@
                                     while (have_rows('ssylki_spisok', 44)) : the_row();
                                 ?>
                                         <li>
-                                            <a href="<?php the_sub_field('ssylka_punkta', 44); ?>"><?php the_sub_field('nazvanie_punkta', 44); ?></a>
+                                            <a href="<?php echo esc_url(get_sub_field('ssylka_punkta', 44)); ?>"><?php the_sub_field('nazvanie_punkta', 44); ?></a>
                                         </li>
                                 <?php
                                     endwhile;
@@ -51,7 +51,7 @@
                                     while (have_rows('uslugi_spisok', 44)) : the_row();
                                 ?>
                                         <li>
-                                            <a href="<?php the_sub_field('ssylka_punkta', 44); ?>"><?php the_sub_field('nazvanie_punkta', 44); ?></a>
+                                            <a href="<?php echo esc_url(get_sub_field('ssylka_punkta', 44)); ?>"><?php the_sub_field('nazvanie_punkta', 44); ?></a>
                                         </li>
                                 <?php
                                     endwhile;

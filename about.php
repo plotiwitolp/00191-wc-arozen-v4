@@ -174,111 +174,39 @@ Template Post Type: post, page
             <div class="container">
                 <div class="block__label"><?php the_field('nasha_istoriya_lejbl'); ?></div>
                 <h2 class="block__title"><?php the_field('nasha_istoriya_zagolovok'); ?></h2>
-
                 <div class="history">
-
                     <div class="histslider1__wrapper">
                         <div class="histslider1">
                             <div class="histslider1__inner">
-                                <div class="histslider1__item"><span>2015</span></div>
-                                <div class="histslider1__item"><span>2016</span></div>
-                                <div class="histslider1__item"><span>2017</span></div>
-                                <div class="histslider1__item"><span>2018</span></div>
-                                <div class="histslider1__item"><span>2019</span></div>
-                                <div class="histslider1__item"><span>2020</span></div>
-                                <div class="histslider1__item"><span>2021</span></div>
-                                <div class="histslider1__item"><span>2022</span></div>
-                                <div class="histslider1__item"><span>2023</span></div>
+                                <?php if (have_rows('nasha_istoriya_po_godam_slajder')) :
+                                    while (have_rows('nasha_istoriya_po_godam_slajder')) : the_row();
+                                ?>
+                                        <div class="histslider1__item"><span><?php echo get_sub_field('god'); ?></span></div>
+                                <?php endwhile;
+                                endif; ?>
                             </div>
                         </div>
-                        <div class="prev-next">
-                            <div class="prev-arrow">предыдущий</div>
-                            <div class="next-arrow">следующий</div>
+                        <div class="history__prevnext prev-next">
+                            <div class="prev-arrow"></div>
+                            <div class="next-arrow"></div>
                         </div>
                     </div>
-
                     <div class="histslider2">
                         <div class="histslider2__inner">
-
-
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2015</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
+                            <?php if (have_rows('nasha_istoriya_po_godam_slajder')) :
+                                while (have_rows('nasha_istoriya_po_godam_slajder')) : the_row();
+                            ?>
+                                    <div class="histslider2__item">
+                                        <div class="histslider2__item-inner">
+                                            <div class="histslider2__item-year"><?php echo get_sub_field('god'); ?></div>
+                                            <div class="histslider2__item-desc"><?php echo get_sub_field('tekst'); ?></div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2016</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2017</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2018</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2019</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2020</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2021</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2022</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2023</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-
+                            <?php endwhile;
+                            endif; ?>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
         <!-- END ИСТОРИЯ -->
@@ -296,7 +224,59 @@ Template Post Type: post, page
 
                 <div class="team2">
 
-                    <!-- наша команда -->
+                    <div class="team2__inner">
+                        <?php if (have_rows('komanda_sotrudniki_slajder')) {
+                            $i = 1;
+                            $sum = count(get_field('komanda_sotrudniki_slajder'));
+                            $sum = $sum < 10 ? '0' .  $sum :   $sum;
+                            while (have_rows('komanda_sotrudniki_slajder')) {
+                                the_row(); ?>
+
+                                <div class="team2__item">
+                                    <div class="team2__item__inner">
+                                        <div class="team2__first">
+                                            <div class="team2__img">
+                                                <?php if ($image = get_sub_field('foto')) { ?>
+                                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                        <div class="team2__second">
+                                            <div class="team2__counter">
+                                                <span><?php echo $i < 10 ? '0' . $i :  $i; ?></span> / <span><?php echo  $sum; ?></span>
+                                            </div>
+                                            <div class="team2__name"><?php echo get_sub_field('imya'); ?></div>
+                                            <div class="team2__spec">
+                                                <span><?php echo get_sub_field('dolzhnost'); ?></span>
+                                            </div>
+                                            <div class="team2__exp">
+                                                <div class="team2__exp-title">Опыт</div>
+                                                <div class="team2__exp-desc"><?php echo get_sub_field('opyt'); ?></div>
+                                            </div>
+                                            <div class="team2__skills">
+                                                <div class="team2__exp-title">Скиллы</div>
+                                                <div class="team2__exp-items">
+                                                    <?php if (have_rows('skilly')) {
+                                                        while (have_rows('skilly')) {
+                                                            the_row(); ?>
+                                                            <div class="team2__exp-item"><?php echo get_sub_field('skill'); ?></div>
+                                                    <?php }
+                                                    } ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <?php $i++;
+                            }
+                        } ?>
+                    </div>
+
+                    <div class="team2__prevnext prev-next">
+                        <div class="prev-arrow"></div>
+                        <div class="next-arrow"></div>
+                    </div>
 
                 </div>
 
