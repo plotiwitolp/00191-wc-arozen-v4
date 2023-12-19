@@ -2019,9 +2019,11 @@ body.customize-support .header {
 .histslider1__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
 }
 .histslider1 {
-  max-width: 1015px;
+  max-width: 1190px;
   width: 100%;
 }
 
@@ -2047,9 +2049,27 @@ body.customize-support .header {
   border: 1px solid #837ede;
 }
 
+.histslider2__item.slick-slide {
+  padding: 32px;
+  margin-right: 20px;
+  border-radius: 24px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.histslider2__item-year {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.histslider2__item-desc {
+  font-size: 14px;
+  color: #928d99;
+  line-height: 18px;
+  font-weight: 500;
+}
 .histslider2__item.slick-slide.slick-current.slick-active {
-  background-color: #837ede;
-  color: #fff;
+  background-color: #f6cb73;
 }
 
 .histslider1 .slick-track {

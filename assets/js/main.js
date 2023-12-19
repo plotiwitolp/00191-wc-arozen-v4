@@ -55,7 +55,7 @@
     });
 
     $('.histslider1__inner').slick({
-      slidesToShow: 11,
+      slidesToShow: 12,
       slidesToScroll: 1,
       asNavFor: '.histslider2__inner',
       focusOnSelect: true,

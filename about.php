@@ -180,11 +180,6 @@ Template Post Type: post, page
                     <div class="histslider1__wrapper">
                         <div class="histslider1">
                             <div class="histslider1__inner">
-
-                                <div class="histslider1__item"><span>2013</span></div>
-                                <div class="histslider1__item"><span>2014</span></div>
-
-
                                 <div class="histslider1__item"><span>2015</span></div>
                                 <div class="histslider1__item"><span>2016</span></div>
                                 <div class="histslider1__item"><span>2017</span></div>
@@ -197,32 +192,13 @@ Template Post Type: post, page
                             </div>
                         </div>
                         <div class="prev-next">
-                            <div class="prev-arrow"> предыдущий </div>
-                            <div class="next-arrow"> следующий </div>
+                            <div class="prev-arrow">предыдущий</div>
+                            <div class="next-arrow">следующий</div>
                         </div>
                     </div>
 
                     <div class="histslider2">
                         <div class="histslider2__inner">
-
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2013</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="histslider2__item">
-                                <div class="histslider2__item-inner">
-                                    <div class="histslider2__item-year">2014</div>
-                                    <div class="histslider2__item-desc">
-                                        Постепенно, с усилением оптимизации и увеличением количества качественных обратных ссылок, вы начнете привлекать больше органического трафика на ваш сайт. Это может занять несколько месяцев, но по мере улучшения позиций в поисковых системах, трафик будет расти.
-                                    </div>
-                                </div>
-                            </div>
-
 
 
                             <div class="histslider2__item">
